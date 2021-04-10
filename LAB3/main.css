@@ -1,0 +1,121 @@
+﻿/*main.css*/
+
+body {
+    background-color: #ffffff;
+}
+h1 {
+    font-size: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+p {
+    font-size: 11px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:navy;
+}
+
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    border-width: medium;
+}
+div.flex-container > div.login:hover {
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        border-width: medium;
+        border: 1px solid #000000;
+    }
+div.flex-container > a > div.login:hover {
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        border-width: medium;
+        border: 1px solid #000000;
+    }
+div.flex-container > div.signup {
+        padding: 5px;
+        margin: 5px;
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        border-width: thin;
+        border: 1px solid #000000;
+        background: #0100FF;
+        width: 100px;
+        height: 30px;
+    }
+div.flex-container > div.cancel {
+        padding: 5px;
+        margin: 5px;
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        border-width: thin;
+        border: 1px solid #000000;
+        background: #FF0000;
+        width: 100px;
+        height: 30px;
+    }
+body.index {
+    display: flex;
+    justify-content: center;
+}
+div.index {
+    flex-direction: row;
+    width: 1020px;
+}
+div.index > h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+div.index > h1.moving {
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    animation-name: movingtext;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+@keyframes movingtext {
+    0% {left: 700px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+div.index > div.flex-container > div.login:hover {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    border-width: medium;
+    border: 1px solid #000000;
+}
+
+div.index > div.flex-container > a > div.login:hover {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    border-width: medium;
+    border: 1px solid #000000;
+}
+div.index > div.flex-container > div.box > img {
+        transition: transform 5s;
+}
+div.index > div.flex-container > div.box > img:hover {
+        transform: scale(4,4);
+        }
+div.index > div.flex-container > div.box {
+        height: 400px;
+        width: 400px;
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        align-items : center;
+        border-width: medium;
+        border: 1px solid #000000;
+        justify-content: center;
+}
+div.index > section {
+        column-count:2;
+        column-gap:10px;
+        column-width:400px;
+        column-rule-style:solid;
+        column-rule-width: 1px;
+    }
