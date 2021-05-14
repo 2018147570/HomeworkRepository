@@ -1,74 +1,74 @@
 [
   {
-    "name": "떡볶이",
+    "name": "tteok",
     "price": 4000,
-    "image": "떡볶이.jpg",
+    "image": "tteok.jpg",
     "type": "meal"
   },
   {
-    "image": "새우구이.jpg",
-    "name": "새우구이",
+    "image": "shrimp.jpg",
+    "name": "shrimp",
     "price": 20000,
     "type": "meal"
   },
   {
-    "name": "족발",
+    "name": "meat",
     "price": 12000,
     "image": "족발.jpg",
-    "type": "meal"
+    "type": "meat"
   },
   {
-    "name": "순두부찌개",
+    "name": "tofu",
     "price": 8000,
-    "image": "순두부찌개.jpg",
+    "image": "tofu.jpg",
     "type": "meal"
   },
   {
-    "name": "케이크",
+    "name": "cake",
     "price": 30000,
-    "image": "케이크.jpg",
+    "image": "cake.jpg",
     "type": "dessert"
   },
   {
-    "name": "마카롱",
+    "name": "macaron",
     "price": 3000,
-    "image": "마카롱.jpg",
+    "image": "macaron.jpg",
     "type": "dessert"
   },
   {
-    "name": "몽블랑",
+    "name": "montblanc",
     "price": 6000,
-    "image": "몽블랑.jpg",
+    "image": "montblanc.jpg",
     "type": "dessert"
   },
   {
-    "name": "포카칩",
+    "name": "snack",
     "price": 1500,
-    "image": "포카칩.jpg",
+    "image": "snack.jpg",
     "type": "dessert"
   },
   {
-    "name": "거북이",
+    "name": "turtle",
     "price": 6000,
-    "image": "거북이.jpg",
+    "image": "turtle.jpg",
     "type": "doll"
   },
   {
-    "name": "곰인형",
+    "name": "bear",
     "price": 6000,
-    "image": "곰인형.jpg",
+    "image": "bear.jpg",
     "type": "doll"
   },
   {
-    "name": "햄스터",
+    "name": "hamster",
     "price": 6000,
-    "image": "햄스터.jpg",
+    "image": "hamster.jpg",
     "type": "doll"
   },
   {
-    "image": "거북이.jpg",
-    "name": "강아지",
+    "image": "dog.jpg",
+    "name": "dog",
     "price": 6000,
-    "type": "강아지"
+    "type": "doll"
   }
 ]
