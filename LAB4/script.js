@@ -42,8 +42,7 @@ function initialize(products) {
       lastCategory = category.value;
       lastSearch = searchTerm.value.trim();
  
-        if(category.value === 'All') {
-        window.alert("c");
+       if(category.value === 'All') {
         categoryGroup = products;
         selectProducts();
  
@@ -64,7 +63,6 @@ function initialize(products) {
 
  
   function selectProducts() {
-    window.alert("a");
     if(searchTerm.value.trim() === '') {
       finalGroup = categoryGroup;
       updateDisplay();
@@ -90,7 +88,6 @@ function initialize(products) {
       main.removeChild(main.firstChild);
     }
 
-    
     if(finalGroup.length === 0) {
       const para = document.createElement('p');
       para.textContent = 'No results to display!';
@@ -105,14 +102,12 @@ function initialize(products) {
 
   function fetchBlob(product) {
    
-    let url = 'images/' + product.image;
+    let url = 'https://2018147570.github.io/HomeworkRepository/LAB4/' + product.image;
  
     fetch(url).then(function(response) {
         return response.blob();
     }).then(function(blob) {
- 
       let objectURL = URL.createObjectURL(blob);
-
       showProduct(objectURL, product);
     });
   }
@@ -127,17 +122,10 @@ function initialize(products) {
 
   
     section.setAttribute('class', product.type);
-
-
-    heading.textContent = product.name.replace(product.name.charAt(0), product.name.charAt(0).toUpperCase());
-
-   
+    heading.textContent = product.name.replace(product.name.charAt(0), product.name.charAt(0).toUpperCase());  
     para.textContent = '$' + product.price.toFixed(2);
-
     image.src = objectURL;
     image.alt = product.name;
-
-    
     main.appendChild(section);
     section.appendChild(heading);
     section.appendChild(para);

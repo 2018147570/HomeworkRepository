@@ -14,8 +14,8 @@
   {
     "name": "meat",
     "price": 12000,
-    "image": "Á·¹ß.jpg",
-    "type": "meat"
+    "image": "meat.jpg",
+    "type": "meal"
   },
   {
     "name": "tofu",
