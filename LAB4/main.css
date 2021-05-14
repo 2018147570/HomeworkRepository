@@ -1,0 +1,84 @@
+﻿/*main.css*/
+
+body {
+    background-color: #ffffff;
+    width: 1020px;
+}
+h1 {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+p {
+    font-size: 11px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:navy;
+}
+
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    border-width: medium;
+}
+div.flex-container > div.login:hover {
+        text-align: center;
+        border-width: medium;
+        border: 1px solid #000000;
+    }
+div.flex-container > a > div.login:hover {
+        text-align: center;
+        border-width: medium;
+        border: 1px solid #000000;
+    }
+
+
+
+
+div.flex-container > div.signup {
+        padding: 5px;
+        margin: 5px;
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        border-width: thin;
+        border: 1px solid #000000;
+        background: #0100FF;
+        width: 100px;
+        height: 30px;
+    }
+div.flex-container > div.cancel {
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        border-width: thin;
+        border: 1px solid #000000;
+        background: #FF0000;
+        width: 100px;
+        height: 30px;
+    }
+body.index {
+    justify-content: center;
+
+}
+div.index {
+    justify-content: center;
+}
+
+div.index > div.flex-container {
+        flex-direction: row;
+        text-align: center;
+    }
+div.index > div.flex-container > div.login:hover {
+    flex-direction: row;
+    text-align: center;
+    border-width: medium;
+    border: 1px solid #000000;
+}
+
+div.index > div.flex-container > a > div.login:hover {
+    flex-direction: row;
+    text-align: center;
+    border-width: medium;
+    border: 1px solid #000000;
+}
