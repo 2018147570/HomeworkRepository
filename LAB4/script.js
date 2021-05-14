@@ -1,5 +1,18 @@
 // JavaScript source code
-fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json')
+let counter = 1;
+document.addEventListener('DOMContentLoaded',load);
+window.onscroll = () =>
+{
+if(window.innerHeight+window.scrollY >= document.body.offsetHeight)
+{
+load();}
+}
+function load()
+{
+const start = counter;
+const end = start +1;
+counter = end+1;
+fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json?postId=${start}&postId=${end}')
 .then(function(response) {
   return response.json();
 })
@@ -129,6 +142,7 @@ function initialize(products) {
     section.appendChild(image);
     section.addEventListener("click",click_a);
   }
+}
 }
 function click_a(e){
 e.target.setAttribute('class', "show");

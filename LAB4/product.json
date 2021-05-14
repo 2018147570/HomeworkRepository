@@ -1,24 +1,6 @@
 [
   {
-    "name": "tteok",
-    "price": 4000,
-    "image": "tteok.jpg",
-    "type": "meal"
-  },
-  {
-    "image": "shrimp.jpg",
-    "name": "shrimp",
-    "price": 20000,
-    "type": "meal"
-  },
-  {
-    "name": "meat",
-    "price": 12000,
-    "image": "meat.jpg",
-    "type": "meal"
-  },
-  {
-    
+
     "postId": 1,
     "name": "tofu",
     "price": 8000,
@@ -80,5 +62,26 @@
     "name": "dog",
     "price": 6000,
     "type": "doll"
+  },
+  {
+    "postId": 10,
+    "name": "tteok",
+    "price": 4000,
+    "image": "tteok.jpg",
+    "type": "meal"
+  },
+  {
+    "postId": 11,
+    "image": "shrimp.jpg",
+    "name": "shrimp",
+    "price": 20000,
+    "type": "meal"
+  },
+  {
+    "postId": 12,
+    "name": "meat",
+    "price": 12000,
+    "image": "meat.jpg",
+    "type": "meal"
   }
 ]
