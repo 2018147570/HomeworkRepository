@@ -11,7 +11,7 @@ function load()
 {
 const start = counter;
 const end = start +1;
-fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json?postId=${start}&postId=${end}')
+fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json')
 .then(function(response) {
   return response.json();
 })
@@ -106,6 +106,7 @@ function initialize(products) {
     } else {
       for(let i = 0; i < finalGroup.length; i++) {
         fetchBlob(finalGroup[i]);
+        
       }
     }
   }
