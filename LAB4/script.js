@@ -10,8 +10,6 @@ fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json')
 .catch(function(err) {
   console.log('Fetch problem: ' + err.message);
 });
-
-
 function initialize(products) {
   const category = document.querySelector('#category');
   const searchTerm = document.querySelector('#searchTerm');
@@ -119,8 +117,7 @@ function initialize(products) {
     const heading = document.createElement('h2');
     const para = document.createElement('p');
     const image = document.createElement('img');
-
-  
+    section.setAttribute('id', "a");
     section.setAttribute('class', product.type);
     heading.textContent = product.name.replace(product.name.charAt(0), product.name.charAt(0).toUpperCase());  
     para.textContent = '$' + product.price.toFixed(2);
@@ -130,5 +127,9 @@ function initialize(products) {
     section.appendChild(heading);
     section.appendChild(para);
     section.appendChild(image);
+    section.addEventListener("click",click_a);
   }
+}
+function click_a(e){
+e.target.setAttribute('class', "show");
 }
