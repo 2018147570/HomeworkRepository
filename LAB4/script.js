@@ -11,7 +11,6 @@ function load()
 {
 const start = counter;
 const end = start +1;
-counter = end+1;
 fetch('https://2018147570.github.io/HomeworkRepository/LAB4/product.json?postId=${start}&postId=${end}')
 .then(function(response) {
   return response.json();
